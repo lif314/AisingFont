@@ -8,6 +8,7 @@
 - 学号：1951976
 - 项目名称：Aising
 - 名称含义：AI Sing --- 一个用AI技术创建的“爱sing”应用程序，用AI改变世界
+- 后端链接：https://github.com/lif314/Aising
 
 - 使用技术：
   - 前端：js + html + css + Fetch + Echarts + tracking.js
