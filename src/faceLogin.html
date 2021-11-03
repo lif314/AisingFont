@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=drive-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/css/faceLogin.css">
+    <!-- font-awesome 图标字体 http://www.fontawesome.com.cn/faicons/#web-application -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+
+    <title>Aising</title>
+
+</head>
+
+<body>
+
+    <div id="login-box">
+        <h1 class="AIsing">AIsing</h1>
+        <button id="camera" class="camera" @click="openCamera">Open Camera</button>
+        <br>
+        <button id="faceLogin" class="faceLogin" @click="faceLogin">Face Login</button>
+        <br>
+
+        <div class="media">
+            <video id="video" width="320" height="240" preload autoplay loop muted></video>
+            <canvas id="canvas" width="320" height="240"></canvas>
+        </div>
+
+
+    </div>
+
+
+    <!-- 导入vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- 路由 -->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="../static/js/faceLogin.js"></script>
+
+
+    <!-- tracking.js相关库 -->
+    <script src="../static/js/tracking.js-master/build/tracking-min.js"></script>
+    <script src="../static/js/tracking.js-master/build/data/face-min.js"></script>
+    <script src="../static/js/tracking.js-master/node_modules/dat.gui/build/dat.gui.min.js"></script>
+    <script src="../static/js/tracking.js-master/assets/stats.min.js"></script>
+
+</body>
+
+</html>

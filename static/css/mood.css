@@ -1,0 +1,268 @@
+    /************************
+Css orignal https://codepen.io/jlalovi/details/bIyAr
+************************/
+    
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: url("../img/loginback.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    h1 {
+        font-size: 23px;
+    }
+    
+    h2 {
+        font-size: 17px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    h1,
+    h2,
+    p,
+    a,
+    span {
+        color: #fff;
+    }
+    
+    .scnd-font-color {
+        color: #9099b7;
+    }
+    
+    .titular {
+        display: block;
+        line-height: 60px;
+        margin: 0;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .horizontal-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .horizontal-list li {
+        float: left;
+    }
+    
+    .block {
+        margin-top: 350px;
+        margin-left: 660px;
+        /* margin: 300px 300px 200px 800px; */
+        background: #00000060;
+        border-radius: 15px;
+        border: #11A8AB 1px solid;
+        float: left;
+        width: 300px;
+        overflow: hidden;
+    }
+    
+    .bar-chart-block {
+        height: 400px;
+    }
+    /********************
+   数据表格整体样式     
+********************/
+    
+    [class^='eje-'] {
+        position: absolute;
+        left: 0;
+        bottom: 0rem;
+        width: 100%;
+        padding: 1rem 1rem 0 2rem;
+        height: 86%;
+    }
+    
+    .eje-x {
+        left: 0px;
+        height: 2.5rem;
+    }
+    
+    .eje-y li {
+        height: 25%;
+        border-top: 1px solid #777;
+    }
+    /* 纵坐标 */
+    
+    [data-ejeY]:before {
+        content: attr(data-ejeY);
+        display: inline-block;
+        width: 2rem;
+        text-align: right;
+        line-height: 0;
+        position: relative;
+        left: -2.5rem;
+        top: -.5rem;
+    }
+    
+    .eje-x li {
+        width: 33%;
+        float: left;
+        text-align: center;
+    }
+    /**************************
+BAR-CHART
+**************************/
+    
+    .grafico.bar-chart {
+        background: #5790df;
+        padding: 0 0rem 0rem 0rem;
+        width: 100%;
+        height: 60%;
+        position: relative;
+        color: #fff;
+        font-size: 80%;
+        border: #E64C65 1px solid;
+    }
+    
+    .bar-chart [class^='eje-'] {
+        padding: 0 1rem 0 2rem;
+        bottom: 1rem;
+    }
+    
+    .bar-chart .eje-x {
+        bottom: -12px;
+    }
+    
+    .bar-chart .eje-y li {
+        height: 20%;
+        border-top: 1px solid #fff;
+    }
+    
+    .bar-chart .eje-x li {
+        width: 14%;
+        position: relative;
+        text-align: center;
+    }
+    
+    .bar-chart .eje-x li i {
+        transform: rotatez(-40deg) translatex(0rem);
+        transform-origin: 30% 40%;
+        display: block;
+    }
+    
+    .bar-chart .eje-x li:before {
+        content: '';
+        position: absolute;
+        bottom: 1.9rem;
+        width: 70%;
+        right: 5%;
+        box-shadow: 3px 0 rgba(0, 0, 0, .1), 3px -3px rgba(0, 0, 0, .1);
+    }
+    
+    .analysis {
+        margin-top: 35px;
+        margin-left: 53px;
+        border-radius: 15px;
+        width: 80px;
+        height: 30px;
+        color: #5790df;
+        background-color: #1161d1;
+    }
+    
+    .camera {
+        margin-top: 35px;
+        margin-left: 43px;
+        border-radius: 15px;
+        width: 80px;
+        height: 30px;
+        color: #5790df;
+        background-color: #1161d1;
+    }
+    
+    .camera span,
+    .analysis span {
+        font-style: italic;
+        font-size: 15px;
+        text-shadow: 0px 0px 8px #fff, 0px 0px 42px #f72, 0px 0px 72px #f84, 0px 0px 150px #fa5;
+    }
+    
+    video,
+    canvas {
+        margin-right: 100px;
+        margin-top: 100px;
+        position: absolute;
+        border-radius: 10px;
+    }
+    /****************
+条形图控制
+*****************/
+    
+    .bar-chart .eje-x li:nth-child(1):before {
+        background: #E64C65;
+        border: #2d0ac9 1px solid;
+        height: 0px;
+        margin-bottom: 13px;
+    }
+    
+    .bar-chart .eje-x li:nth-child(2):before {
+        background: #11A8AB;
+        height: 0px;
+        border: #E64C65 1px solid;
+        margin-bottom: 13px;
+    }
+    
+    .bar-chart .eje-x li:nth-child(3):before {
+        background: #FCB150;
+        height: 162px;
+        border: #E64C65 1px solid;
+        margin-bottom: 13px;
+    }
+    
+    .bar-chart .eje-x li:nth-child(4):before {
+        background: #4FC4F6;
+        height: 0px;
+        border: #E64C65 1px solid;
+        margin-bottom: 13px;
+    }
+    
+    .bar-chart .eje-x li:nth-child(5):before {
+        background: #FFED0D;
+        height: 162px;
+        border: #E64C65 1px solid;
+        margin-bottom: 13px;
+    }
+    
+    .bar-chart .eje-x li:nth-child(6):before {
+        background: #F46FDA;
+        margin-left: 10px;
+        height: 0px;
+        border: #E64C65 1px solid;
+        margin-bottom: 13px;
+    }
+    
+    .bar-chart .eje-x li:nth-child(7):before {
+        background: #15BFCC;
+        height: 39px;
+        /* margin-left: 10px; */
+        border: #E64C65 1px solid;
+        margin-bottom: 13px;
+    }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=drive-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <!-- font-awesome 图标字体 http://www.fontawesome.com.cn/faicons/#web-application -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+
+    <title>Aising</title>
+</head>
+
+<body>
+
+    <div id="register-box">
+        <h1 class="AIsing">AIsing</h1>
+        <div class="form">
+            <div class="item">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input type="text" id="username" placeholder="Username">
+            </div>
+
+            <div class="item">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="item">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                <button class="reg-photo" id="image">image</button>
+                <button class="reg-photo" id="camera">camera</button>
+            </div>
+            <button id="register" class="register">register !</button>
+        </div>
+
+    </div>
+
+    <div class="media">
+        <video id="video" preload autoplay></video>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- 导入vue -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="../static/js/register.js"></script>
+    <!-- 引入axios在线地址 -->
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+
+    <!-- tracking.js相关库 -->
+    <script src="../static/js/tracking.js-master/build/tracking-min.js"></script>
+    <script src="../static/js/tracking.js-master/build/data/face-min.js"></script>
+    <script src="../static/js/tracking.js-master/node_modules/dat.gui/build/dat.gui.min.js"></script>
+    <script src="../static/js/tracking.js-master/assets/stats.min.js"></script>
+
+</body>
+
+</html>

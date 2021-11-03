@@ -1,0 +1,80 @@
+body {
+    background: url('../img/loginback.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#login-box {
+    width: 30%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 15%;
+    text-align: center;
+    background: #00000060;
+    padding: 20px 50px;
+}
+
+#login-box h1 {
+    color: #fff;
+}
+
+#login-box .form .item input {
+    margin-top: 15px;
+}
+
+#login-box .form i {
+    font-size: 18px;
+    color: #fff;
+}
+
+#login-box .form .item input {
+    width: 180px;
+    font-size: 18px;
+    /* border: 0; */
+    border-bottom: 2px solid#fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #ffffff00;
+    color: #fff;
+}
+
+.camera,
+.faceLogin {
+    margin-top: 10px;
+    /* vertical-align: auto; */
+    width: 166px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(to right, #f30909 0%, #4013e6e1 100%);
+    /* border: 0; */
+    border-radius: 15px;
+}
+
+
+/* .register{
+    margin-top: 15px;
+    float: right;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background:linear-gradient(to right,#684e4e 12%,#3b3a4ee1 40%);
+    border: 0;
+    border-radius: 15px;
+} */
+
+.AIsing {
+    font-style: italic;
+    text-shadow: 0px 0px 8px #fff, 0px 0px 42px #f72, 0px 0px 72px #f84, 0px 0px 150px #fa5;
+}
+
+video,
+canvas {
+    margin-left: -155px;
+    margin-top: 14px;
+    position: absolute;
+    /* border: 1px solid red; */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ref: https://codepen.io/Kseso/pen/phiyL -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=drive-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../static/css/mood.css">
+    <!-- font-awesome 图标字体 http://www.fontawesome.com.cn/faicons/#web-application -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+
+    <title>Aising</title>
+
+</head>
+
+<body>
+    <!-- <div id="mood-box"> -->
+    <!-- <h1 class="AIsing">AIsing</h1> -->
+
+    <div class="bar-chart-block block">
+        <h2 class='titular'>Mood Analysis</h2>
+        <div class='grafico bar-chart'>
+            <ul class='eje-y'>
+                <li data-ejeY='100'></li>
+                <li data-ejeY='75'></li>
+                <li data-ejeY='50'></li>
+                <li data-ejeY='25'></li>
+                <li data-ejeY='0'></li>
+            </ul>
+            <ul class='eje-x'>
+                <li data-ejeX='0' id="happy" height="h_happy" v-model="h_happy"><i>高兴</i></li>
+                <li data-ejeX='0' id="calm"><i>平静</i></li>
+                <li data-ejeX='0' id="surprise"><i>惊讶</i></li>
+                <li data-ejeX='0' id="sad"><i>伤心</i></li>
+                <li data-ejeX='0' id="disgust"><i>厌恶</i></li>
+                <li data-ejeX='0' id="anger"><i>愤怒</i></li>
+                <li data-ejeX='0' id="fear"><i>恐惧</i></li>
+            </ul>
+        </div>
+
+        <div class="ac_btn">
+            <button id="camera" class="camera"> <span>Camera</span></button>
+            <button id="analysis" class="analysis"> <span>Analysis</span></button>
+        </div>
+    </div>
+
+    <div class="media">
+        <video id="video" width="320" height="240" preload autoplay loop muted></video>
+        <canvas id="canvas" width="320" height="240"></canvas>
+    </div>
+
+
+    <!-- 导入vue -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <!-- 路由 -->
+    <!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
+    <script src="../static/js/mood.js"></script>
+
+    <!-- tracking.js相关库 -->
+    <script src="../static/js/tracking.js-master/build/tracking-min.js"></script>
+    <script src="../static/js/tracking.js-master/build/data/face-min.js"></script>
+    <script src="../static/js/tracking.js-master/node_modules/dat.gui/build/dat.gui.min.js"></script>
+    <script src="../static/js/tracking.js-master/assets/stats.min.js"></script>
+
+</body>
+
+</html>

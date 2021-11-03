@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=drive-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <!-- font-awesome 图标字体 http://www.fontawesome.com.cn/faicons/#web-application -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+
+    <title>Aising</title>
+</head>
+
+<body>
+    <div id="login-box">
+        <h1 class="AIsing">AIsing</h1>
+        <div class="form">
+            <div class="item">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <div class="item">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+        </div>
+        <button id="login" class="login" @click="login">Login</button>
+        <br>
+        <button id="tofaceLogin" class="faceLogin">Login with face</button>
+        <br>
+        <button id="toregister" class="register"> Register</button>
+
+    </div>
+
+    <!-- 导入vue -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <!-- 路由 -->
+    <!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
+    <script src="../static/js/login.js"></script>
+
+
+</body>
+
+</html>
